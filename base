@@ -99,7 +99,7 @@ int main() {
 
     std::cout << convert("id")<< convert("Имя")<< convert("Продавец")<< convert("Бренд")<< convert("Категория") << "\n";
     for (auto category : categories) {
-        std::cout << "Категория: " << category.name << std::endl;
+        std::cout << "\n";
         for (auto product : products) {
             if (product.category.id == category.id) {
                 std::cout << convert(std::to_string( product.id)) << convert( product.name)<<convert( product.seller.name)<<convert(product.brand.name)
